@@ -1,196 +1,169 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Consultora de Carlos Rivera</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Carlos Rivera Consultora</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;800&display=swap" rel="stylesheet">
   <style>
-    /* Reset básico */
-    *, *::before, *::after {
-      box-sizing: border-box;
-    }
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Inter', sans-serif;
       margin: 0;
-      background: #f0f6f4;
-      color: #2c3e27; /* verde pino oscuro */
-      line-height: 1.6;
-    }
-    header {
-      background: #244b33; /* verde pino */
-      color: #e6f0ea;
-      padding: 3rem 1rem 2rem;
-      text-align: center;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-    }
-    header img.logo {
-      width: 100px;
-      height: auto;
-      margin-bottom: 1rem;
-      border-radius: 50%;
-      border: 3px solid #e6f0ea;
-      background: white;
-    }
-    header h1 {
-      margin: 0 0 0.5rem;
-      font-weight: 700;
-      font-size: 2.8rem;
-      letter-spacing: 1px;
-    }
-    header p {
-      margin: 0;
-      font-size: 1.25rem;
-      font-style: italic;
-      color: #a6bfb0;
-    }
-    main {
-      max-width: 900px;
-      margin: 2rem auto 4rem;
-      padding: 0 1rem;
-    }
-    section {
-      margin-bottom: 3rem;
-      background: #ffffff;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(36, 75, 51, 0.15);
-      padding: 2rem 2.5rem;
-      transition: box-shadow 0.3s ease;
-    }
-    section:hover {
-      box-shadow: 0 6px 15px rgba(36, 75, 51, 0.3);
-    }
-    h2 {
-      border-left: 6px solid #244b33;
-      padding-left: 0.75rem;
-      color: #244b33;
-      font-size: 1.9rem;
-      margin-top: 0;
-      margin-bottom: 1rem;
-    }
-    ul {
-      padding-left: 1.5rem;
-      color: #3e5b44;
-      font-size: 1.1rem;
-    }
-    ul li {
-      margin-bottom: 0.5rem;
-    }
-    p {
-      font-size: 1.1rem;
-      color: #2c3e27;
-    }
-    footer {
-      text-align: center;
-      padding: 1.5rem 1rem;
-      background: #244b33;
-      color: #e6f0ea;
-      font-size: 0.9rem;
-      font-weight: 600;
-    }
-    a {
-      color: #2c6e2c;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    a:hover, a:focus {
-      text-decoration: underline;
+      padding: 0;
+      background-color: #f7f9fb;
+      color: #333;
     }
 
-    /* Botones sociales */
-    .social-links {
-      margin-top: 1rem;
+    header {
+      background: linear-gradient(to right, #2c3e50, #4ca1af);
+      color: white;
+      padding: 2rem 1rem;
       text-align: center;
     }
-    .social-links a {
-      display: inline-block;
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      color: white;
       margin: 0 10px;
       text-decoration: none;
-      color: #244b33;
-      font-weight: 700;
-      font-size: 1.2rem;
-      border: 2px solid #244b33;
-      padding: 6px 14px;
-      border-radius: 25px;
-      transition: background-color 0.3s, color 0.3s;
+      font-weight: 600;
     }
-    .social-links a:hover {
-      background-color: #244b33;
-      color: #e6f0ea;
+
+    section {
+      padding: 3rem 1rem;
+      max-width: 900px;
+      margin: auto;
     }
-    /* Responsive */
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
-      }
-      header p {
-        font-size: 1rem;
-      }
-      main {
-        padding: 0 1rem;
-      }
-      section {
-        padding: 1.5rem 1.5rem;
-      }
-      .social-links a {
-        font-size: 1rem;
-        padding: 5px 10px;
-      }
+
+    .services, .softwares {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
     }
+
+    .card {
+      background: white;
+      border-radius: 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      max-width: 250px;
+      text-align: center;
+    }
+
+    .softwares img {
+      max-width: 60px;
+      margin-bottom: 1rem;
+    }
+
+    .contacto {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .whatsapp {
+      display: inline-block;
+      margin-top: 1rem;
+      background-color: #25D366;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    img.logo {
+      max-width: 120px;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+
   </style>
 </head>
 <body>
+
   <header>
-    <!-- Logo: usa este placeholder o sube tu logo a GitHub y cambia la URL -->
-    <img class="logo" src="https://cdn-icons-png.flaticon.com/512/2921/2921222.png" alt="Logo Consultora" />
-    <h1>Consultora de Carlos Rivera</h1>
-    <p>Estadística clara para decisiones inteligentes.</p>
-    <div class="social-links">
-      <a href="https://wa.me/521228XXXXXXX" target="_blank" rel="noopener" aria-label="WhatsApp">WhatsApp</a>
-      <a href="https://www.linkedin.com/in/carlosrrff/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
-    </div>
+    <img src="https://avatars.githubusercontent.com/u/85600401?v=4" alt="Logotipo" class="logo">
+    <h1>Carlos Rivera Consultora</h1>
+    <nav>
+      <a href="#servicios">Servicios</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#softwares">Softwares</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
   </header>
 
-  <main>
-    <section>
-      <h2>Servicios</h2>
-      <ul>
-        <li>Análisis estadístico con R, SPSS, Jamovi y Microsoft Office.</li>
-        <li>Manejo de bases de datos relacionales y no relacionales (MySQL, MariaDB, MongoDB, SQLite).</li>
-        <li>Modelos de regresión (lineal, no lineal, generalizados y semiparamétricos).</li>
-        <li>Aprendizaje automático y minería de datos.</li>
-        <li>Diseños y análisis de experimentos.</li>
-        <li>Control estadístico de calidad.</li>
-        <li>Bootstrap y muestreo.</li>
-        <li>Análisis cualitativo y bioestadística.</li>
-        <li>Visualización clara y efectiva de resultados.</li>
-        <li>Asesoría para proyectos, tesis y toma de decisiones estratégicas.</li>
-      </ul>
-    </section>
+  <section id="servicios">
+    <h2>Servicios</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Análisis Estadístico</h3>
+        <p>Estudios descriptivos, inferenciales y análisis multivariado para proyectos académicos y profesionales.</p>
+      </div>
+      <div class="card">
+        <h3>Modelado Bayesiano</h3>
+        <p>Aplicación de métodos bayesianos en contextos médicos, sociales y ambientales.</p>
+      </div>
+      <div class="card">
+        <h3>Consultoría en Investigación</h3>
+        <p>Asesoría personalizada para tesis, artículos científicos y proyectos de datos.</p>
+      </div>
+    </div>
+  </section>
 
-    <section>
-      <h2>Sobre mí</h2>
-      <p>
-        Soy estadístico con mención honorífica y más de 1 año de experiencia en análisis de datos universitarios y más de 2 años en proyectos independientes. 
-        Experto en R, modelado predictivo, estadística multivariada, machine learning y visualización de datos, con historial comprobado de reducción de tiempos de procesamiento en un 60%. 
-        Mi misión es impulsar la toma de decisiones estratégicas con análisis de datos claros y confiables.
-      </p>
-      <p><strong>Educación:</strong></p>
-      <ul>
-        <li>Licenciatura en Estadística - Universidad Veracruzana (mayo 2021 - junio 2025)</li>
-        <li>Licenciatura en Actuaría (Estancia de movilidad) - Universidad Iberoamericana (enero 2024 - mayo 2025)</li>
-      </ul>
-    </section>
+  <section id="experiencia">
+    <h2>Experiencia</h2>
+    <p>Soy Licenciado en Estadística por la Universidad Veracruzana. He trabajado como consultor privado con profesionales del área médica y social, colaborando en estudios clínicos, análisis de encuestas y evaluación de políticas públicas.</p>
+    <p>También he desarrollado dashboards, análisis exploratorios y herramientas interactivas en R y Excel, trabajando con bases de datos institucionales.</p>
+  </section>
 
-    <section>
-      <h2>Contacto</h2>
-      <p>Correo: <a href="mailto:carlos.rrf06@gmail.com">carlos.rrf06@gmail.com</a></p>
-      <p>WhatsApp: <a href="https://wa.me/5212281692762" target="_blank" rel="noopener">228 169 2762</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/carlosrrff/" target="_blank" rel="noopener">linkedin.com/in/carlosrrff/</a></p>
-    </section>
-  </main>
+  <section id="softwares">
+    <h2>Softwares que manejo</h2>
+    <div class="softwares">
+      <div class="card">
+        <img src="https://www.r-project.org/logo/Rlogo.png" alt="R">
+        <p><strong>R</strong> y RStudio</p>
+      </div>
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/86/Excel_2013_logo.svg" alt="Excel">
+        <p><strong>Excel</strong> avanzado</p>
+      </div>
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/SPSS_logo.svg" alt="SPSS">
+        <p><strong>SPSS</strong></p>
+      </div>
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Power_bi_logo_black.svg" alt="Power BI">
+        <p><strong>Power BI</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="contacto">
+    <h2>Contacto</h2>
+    <p>¿Necesitas asesoría o colaboración en tu proyecto?</p>
+    <a class="whatsapp" href="https://wa.me/522281692762" target="_blank">Escríbeme por WhatsApp</a>
+  </section>
 
   <footer>
-    &copy; 2025 Consultora de Carlos Rivera. Todos los derechos reservados.
+    © 2025 Carlos Rivera Consultora
   </footer>
+
 </body>
 </html>
