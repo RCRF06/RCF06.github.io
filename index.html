@@ -1,68 +1,156 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Consultora RCF06</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Consultora de Carlos Rivera</title>
   <style>
+    /* Reset básico */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f9fb;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      padding: 0;
-      color: #333;
+      background: #f0f6f4;
+      color: #2c3e27; /* verde pino oscuro */
+      line-height: 1.6;
     }
     header {
-      background-color: #2c3e50;
-      color: white;
-      padding: 2rem;
+      background: #244b33; /* verde pino */
+      color: #e6f0ea;
+      padding: 3rem 1rem 2rem;
       text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+    header h1 {
+      margin: 0 0 0.5rem;
+      font-weight: 700;
+      font-size: 2.8rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin: 0;
+      font-size: 1.25rem;
+      font-style: italic;
+      color: #a6bfb0;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto 4rem;
+      padding: 0 1rem;
     }
     section {
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
+      margin-bottom: 3rem;
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(36, 75, 51, 0.15);
+      padding: 2rem 2.5rem;
+      transition: box-shadow 0.3s ease;
+    }
+    section:hover {
+      box-shadow: 0 6px 15px rgba(36, 75, 51, 0.3);
     }
     h2 {
-      color: #2c3e50;
+      border-left: 6px solid #244b33;
+      padding-left: 0.75rem;
+      color: #244b33;
+      font-size: 1.9rem;
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+    ul {
+      padding-left: 1.5rem;
+      color: #3e5b44;
+      font-size: 1.1rem;
+    }
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+    p {
+      font-size: 1.1rem;
+      color: #2c3e27;
     }
     footer {
-      background-color: #ecf0f1;
       text-align: center;
-      padding: 1rem;
+      padding: 1.5rem 1rem;
+      background: #244b33;
+      color: #e6f0ea;
       font-size: 0.9rem;
+      font-weight: 600;
+    }
+    a {
+      color: #2c6e2c;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    a:hover, a:focus {
+      text-decoration: underline;
+    }
+    /* Responsive */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+      main {
+        padding: 0 1rem;
+      }
+      section {
+        padding: 1.5rem 1.5rem;
+      }
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Consultora de Carlos Rivera</h1>
+    <p>Estadística clara para decisiones inteligentes.</p>
+  </header>
 
-<header>
-  <h1>Consultora Estadística RCF06</h1>
-  <p>Soluciones inteligentes en análisis de datos</p>
-</header>
+  <main>
+    <section>
+      <h2>Servicios</h2>
+      <ul>
+        <li>Análisis estadístico con R, SPSS, Jamovi y Microsoft Office.</li>
+        <li>Manejo de bases de datos relacionales y no relacionales (MySQL, MariaDB, MongoDB, SQLite).</li>
+        <li>Modelos de regresión (lineal, no lineal, generalizados y semiparamétricos).</li>
+        <li>Aprendizaje automático y minería de datos.</li>
+        <li>Diseños y análisis de experimentos.</li>
+        <li>Control estadístico de calidad.</li>
+        <li>Bootstrap y muestreo.</li>
+        <li>Análisis cualitativo y bioestadística.</li>
+        <li>Visualización clara y efectiva de resultados.</li>
+        <li>Asesoría para proyectos, tesis y toma de decisiones estratégicas.</li>
+      </ul>
+    </section>
 
-<section>
-  <h2>Servicios</h2>
-  <ul>
-    <li>Análisis estadístico descriptivo e inferencial</li>
-    <li>Modelado de datos y pronósticos</li>
-    <li>Limpieza y depuración de grandes bases de datos</li>
-    <li>Visualización clara y efectiva de resultados</li>
-  </ul>
+    <section>
+      <h2>Sobre mí</h2>
+      <p>
+        Soy estadístico con mención honorífica y más de 1 año de experiencia en análisis de datos universitarios y más de 2 años en proyectos independientes. 
+        Experto en R, modelado predictivo, estadística multivariada, machine learning y visualización de datos, con historial comprobado de reducción de tiempos de procesamiento en un 60%. 
+        Mi misión es impulsar la toma de decisiones estratégicas con análisis de datos claros y confiables.
+      </p>
+      <p><strong>Educación:</strong></p>
+      <ul>
+        <li>Licenciatura en Estadística - Universidad Veracruzana (mayo 2021 - junio 2025)</li>
+        <li>Licenciatura en Actuaría (Estancia de movilidad) - Universidad Iberoamericana (enero 2024 - mayo 2025)</li>
+      </ul>
+    </section>
 
-  <h2>Sobre mí</h2>
-  <p>
-    Soy un profesional en estadística con experiencia en consultoría para áreas médicas, académicas y sociales. 
-    Me enfoco en traducir datos complejos en información útil y accionable.
-  </p>
+    <section>
+      <h2>Contacto</h2>
+      <p>Correo: <a href="mailto:carlos.rrf06@gmail.com">carlos.rrf06@gmail.com</a></p>
+      <p>WhatsApp: <a href="https://wa.me/521228XXXXXXXX" target="_blank" rel="noopener">228 XXXXXXXX</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/carlosrrff/" target="_blank" rel="noopener">linkedin.com/in/carlosrrff/</a></p>
+    </section>
+  </main>
 
-  <h2>Contacto</h2>
-  <p>Puedes escribirme a: <strong>consultora.rcf06@gmail.com</strong></p>
-</section>
-
-<footer>
-  &copy; 2025 Consultora RCF06. Todos los derechos reservados.
-</footer>
-
+  <footer>
+    &copy; 2025 Consultora de Carlos Rivera. Todos los derechos reservados.
+  </footer>
 </body>
 </html>
