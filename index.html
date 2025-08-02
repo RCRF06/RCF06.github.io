@@ -23,6 +23,14 @@
       text-align: center;
       box-shadow: 0 4px 8px rgba(0,0,0,0.15);
     }
+    header img.logo {
+      width: 100px;
+      height: auto;
+      margin-bottom: 1rem;
+      border-radius: 50%;
+      border: 3px solid #e6f0ea;
+      background: white;
+    }
     header h1 {
       margin: 0 0 0.5rem;
       font-weight: 700;
@@ -87,6 +95,28 @@
     a:hover, a:focus {
       text-decoration: underline;
     }
+
+    /* Botones sociales */
+    .social-links {
+      margin-top: 1rem;
+      text-align: center;
+    }
+    .social-links a {
+      display: inline-block;
+      margin: 0 10px;
+      text-decoration: none;
+      color: #244b33;
+      font-weight: 700;
+      font-size: 1.2rem;
+      border: 2px solid #244b33;
+      padding: 6px 14px;
+      border-radius: 25px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .social-links a:hover {
+      background-color: #244b33;
+      color: #e6f0ea;
+    }
     /* Responsive */
     @media (max-width: 600px) {
       header h1 {
@@ -101,13 +131,23 @@
       section {
         padding: 1.5rem 1.5rem;
       }
+      .social-links a {
+        font-size: 1rem;
+        padding: 5px 10px;
+      }
     }
   </style>
 </head>
 <body>
   <header>
+    <!-- Logo: usa este placeholder o sube tu logo a GitHub y cambia la URL -->
+    <img class="logo" src="https://cdn-icons-png.flaticon.com/512/2921/2921222.png" alt="Logo Consultora" />
     <h1>Consultora de Carlos Rivera</h1>
     <p>Estadística clara para decisiones inteligentes.</p>
+    <div class="social-links">
+      <a href="https://wa.me/521228XXXXXXX" target="_blank" rel="noopener" aria-label="WhatsApp">WhatsApp</a>
+      <a href="https://www.linkedin.com/in/carlosrrff/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+    </div>
   </header>
 
   <main>
@@ -144,7 +184,7 @@
     <section>
       <h2>Contacto</h2>
       <p>Correo: <a href="mailto:carlos.rrf06@gmail.com">carlos.rrf06@gmail.com</a></p>
-      <p>WhatsApp: <a href="https://wa.me/521228XXXXXXXX" target="_blank" rel="noopener">228 XXXXXXXX</a></p>
+      <p>WhatsApp: <a href="https://wa.me/5212281692762" target="_blank" rel="noopener">228 XXXXXXXX</a></p>
       <p>LinkedIn: <a href="https://www.linkedin.com/in/carlosrrff/" target="_blank" rel="noopener">linkedin.com/in/carlosrrff/</a></p>
     </section>
   </main>
